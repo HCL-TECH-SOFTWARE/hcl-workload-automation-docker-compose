@@ -18,7 +18,7 @@ You can access the HCL Workload Automation container images from the Entitled Re
 
 1. Contact your HCL sales representative for the login details required to access the HCL Entitled Registry.
 
-2. Execute the following command to login into the HCL Entitled Registry:
+2. Execute the following command to log in into the HCL Entitled Registry:
       
         docker login -u <your_username> -p <your_entitled_key> hclcr.io
 
