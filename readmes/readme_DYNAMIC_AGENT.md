@@ -10,12 +10,15 @@ Docker adoption ensures standardization of your workload scheduling environment 
 
 
 
+
+
+
 ## Supported tags
-- 9.5.0.03.20210326
+- 9.5.0.04.20210709
 - 9.5.0.02.20200727 (only for distributed)
  
  ## Supported platforms
- The supported operating systems are: Windows, Linux Intel based 64-bit, and Linux on Z.
+ The supported operating systems are: Windows, Linux intel based 64-bit, and Linux on Z.
  
 
 
@@ -35,7 +38,7 @@ You can access the Dynamic Agent container image from the Entitled Registry:
  The image is as follows:
 
 
-* hclcr.io/wa/hcl-workload-automation-agent-dynamic:9.5.0.03.20210218
+* hclcr.io/wa/hcl-workload-automation-agent-dynamic:9.5.0.04.20210709
 
 ### From HCL Flexera
 
@@ -99,7 +102,7 @@ To start the container from the command-line, launch the following command by ad
         -e SERVERPORT=server_port \
         -e LICENSE=ACCEPT \
         -v workload-automation-agent-dynamic-data:/home/wauser \
-        hcl-workload-automation-agent-dynamic:9.5.0.03.20210218
+        hcl-workload-automation-agent-dynamic:9.5.0.04.<release_date>
 
 
 > **Note:** The name of the image has to be the same as the one you loaded on your local workstation when you launched the docker load command.
@@ -130,6 +133,8 @@ For example, specify the variable and its value as follows: LICENSE=ACCEPT
 | BKMSERVERHOSTNAME  | The hostname of the backup master domain manager                                                                                                                                                                                                                              | no          | wabkm.demo.com    | 
 | MAXWAITONEXIT      | The number of seconds the Agent waits for the completion of all processes before stopping the container. The Default value is 60 sec, the maximum value is 3600 sec                                                                                                           | no          | 60 sec            |   
 | TZ                 | If used, it sets the TZ operating system environment variable                                                                                                                                                                                                                 | no          | Europe/Rome       |
+| WA_USER_ENGINE                 | The user for which you have installed the master domain manager to which the agent is connecting                                                                                                                                                                                                                 | no          | wa_user       |
+| WA_USER_ENGINE_PASSWORD                 | The password for the user for which you have installed the master domain manager to which the agent is connecting                                                                                                                                                                                                                 | no          | wa_user_password       |
 
 
 
@@ -201,6 +206,9 @@ You can pre-create Persistent Volumes to be bound to the StatefulSet using Label
 
 
 
+
+
+
 ## Supported Docker versions
 This image is officially supported on Docker version 19.xx.xx, or later.
 
@@ -223,4 +231,3 @@ For additional information about how to use the HCL Workload Automation Agent, s
 
 ## License
 The Dockerfile and associated scripts are licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0). HCL Workload Automation Agent is licensed under the HCL International Program License Agreement. This license for HCL Workload Automation Agent can be found [online](). Note that this license does not permit further distribution.
-
