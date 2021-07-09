@@ -1,3 +1,5 @@
+
+
 # Workload Automation z-centric Agent
 
 ## Introduction
@@ -10,13 +12,17 @@ z-centric Agent has the following restriction:
  - Single node instance 
 
 
+
+
 ## Supported tags
-- 9.5.0.03.20210326
+- 9.5.0.04.20210709
 - 9.5.0.02.20200727 (only for distributed)
  
  ## Supported platforms
- The supported operating systems are: Windows, Linux Intel based 64-bit, and Linux on Z.
+ The supported operating systems are: Windows, Linux intel based 64-bit, and Linux on Z.
  
+
+
 
 ## Accessing the container images
 
@@ -34,7 +40,7 @@ You can access the z-centric Agent container image from the Entitled Registry:
  The image is as follows:
 
 
-* hclcr.io/wa/hcl-workload-automation-agent-dynamic:9.5.0.03.20210218
+* hclcr.io/wa/hcl-workload-automation-agent-dynamic:9.5.0.04.20210709
 
 
 ### From HCL Flexera
@@ -47,6 +53,9 @@ If you are accessing the images from HCL Flexera, use the following command to u
 
 
 Before you deploy HCL Workload Automation components on Linux on Z, see Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v95/distr/src_pi/awspizLinuxDeployments.html)
+
+
+
 
 
 
@@ -90,12 +99,12 @@ You can optionally check the container logs using the following command:
 
 To start the container from the command-line, launch the following command by adding the name of the image that has been loaded:
 
-    docker run \
+  docker run \
         -d -e AGT_NAME=agent_name \
         -e LICENSE=ACCEPT \
-	      -e ZCONN_URL=https://zconn_hostname:zconn_port/twsz/v1/plugin \
+	    -e ZCONN_URL=https://zconn_hostname:zconn_port/twsz/v1/plugin \
         -v workload-automation-agent-zcentric-data:/home/wauser \
-           hcl-workload-automation-agent-zcentric:9.5.0.03.20210218
+        hcl-workload-automation-agent-zcentric:9.5.0.04.<release_date>
 
 > **Note:** The name of the image has to be the same as the one you loaded on your local workstation when you launched the docker load command.
 
@@ -154,4 +163,3 @@ For additional information about how to use the HCL Workload Automation Agent, s
 
 ## License
 The Dockerfile and associated scripts are licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0). HCL Workload Automation Agent is licensed under the HCL International Program License Agreement. This license for HCL Workload Automation Agent can be found [online](). Note that this license does not permit further distribution.
-
