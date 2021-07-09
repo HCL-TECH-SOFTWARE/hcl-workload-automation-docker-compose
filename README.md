@@ -24,9 +24,9 @@ You can access the HCL Workload Automation container images from the Entitled Re
 
  The images are as follows:
 
-* hclcr.io/wa/hcl-workload-automation-agent-dynamic:9.5.0.03.20210326
-* hclcr.io/wa/hcl-workload-automation-server:9.5.0.03.20210326
-* hclcr.io/wa/hcl-workload-automation-console:9.5.0.03.20210326
+* hclcr.io/wa/hcl-workload-automation-agent-dynamic:9.5.0.04.20210709
+* hclcr.io/wa/hcl-workload-automation-server:9.5.0.04.20210709
+* hclcr.io/wa/hcl-workload-automation-console:9.5.0.04.20210709
 
 
 ## Getting Started
