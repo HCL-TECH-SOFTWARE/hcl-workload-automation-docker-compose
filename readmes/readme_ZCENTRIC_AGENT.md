@@ -41,7 +41,7 @@ You can access the z-centric Agent container image from the Entitled Registry:
  The image is as follows:
 
 
-* hclcr.io/wa/hcl-workload-automation-agent-dynamic:9.5.0.05.20210218
+* hclcr.io/wa/hcl-workload-automation-agent-dynamic:9.5.0.05.20211217
 
 
 ### From HCL Flexera
