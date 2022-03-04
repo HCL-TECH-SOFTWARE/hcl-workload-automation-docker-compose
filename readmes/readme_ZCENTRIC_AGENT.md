@@ -1,6 +1,6 @@
 
 
-# Workload Automation z-centric Agent
+# Workload Automationz-centric Agent
 
 ## Introduction
 Workload Automation is a complete, modern solution for batch and real-time workload management. It enables organizations to gain complete visibility and control over attended or unattended workloads. From a single point of control, it supports multiple platforms and provides advanced integration with enterprise applications including ERP, Business Analytics, File Transfer, Big Data, and Cloud applications.
@@ -9,19 +9,18 @@ Docker adoption ensures standardization of your workload scheduling environment 
 
 z-centric Agent has the following restriction:
 
- - Single node instance
-
+ - Single node instance 
 
 
 
 
 ## Supported tags
+- 10.1.0.00.20220304
 - 9.5.0.05.20211217
-- 9.5.0.04.20210804
-
+ 
  ## Supported platforms
  The supported operating systems are: Windows, Linux intel based 64-bit, and Linux on Z.
-
+ 
 
 
 
@@ -34,14 +33,14 @@ You can access the z-centric Agent container image from the Entitled Registry:
 
 
 3.  Run the following command to login into the HCL Entitled Registry:
-
+      
         
 	docker login -u <your_username> -p <your_entitled_key> hclcr.io
 
  The image is as follows:
 
 
-* hclcr.io/wa/hcl-workload-automation-agent-dynamic:9.5.0.05.20211217
+* hclcr.io/wa/hcl-workload-automation-agent-dynamic:10.1.0.00.20220304
 
 
 ### From HCL Flexera
@@ -49,20 +48,19 @@ You can access the z-centric Agent container image from the Entitled Registry:
 If you are accessing the images from HCL Flexera, use the following command to upload the image to your local Docker environment:
 
      docker load -i <tar_name>
-
+	 
   where <tar_name> is the name of the .tar file containing the image.
 
 
-
-Before you deploy HCL Workload Automation components on Linux on Z, see Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v95/distr/src_pi/awspizLinuxDeployments.html)
-
+Before you deploy HCL Workload Automation components on Linux on Z, see Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v101/distr/src_pi/awspizLinuxDeployments.html)
 
 
 
 
 
-## Getting Started
-You can deploy the HCL Workload Automation containers using either Docker compose or Docker run. For both of these methods, ensure you download and install [Docker](https://www.docker.com).
+
+## Getting Started 
+You can deploy the HCL Workload Automation containers using either Docker compose or Docker run. For both of these methods, ensure you download and install [Docker](https://www.docker.com). 
 
 ### Getting started with Docker compose
 
@@ -90,7 +88,7 @@ In the directory where  the **docker-compose.yml** file has been located, you ca
 
 Once the command has been launched, be sure that the containers are started using the following command:
 
-    docker ps
+    docker ps 
 
 You can optionally check the container logs using the following command:
 
@@ -106,7 +104,7 @@ To start the container from the command-line, launch the following command by ad
         -e LICENSE=ACCEPT \
 	    -e ZCONN_URL=https://zconn_hostname:zconn_port/twsz/v1/plugin \
         -v workload-automation-agent-zcentric-data:/home/wauser \
-        hcl-workload-automation-agent-zcentric:9.5.0.05.<release_date>
+        hcl-workload-automation-agent-zcentric:10.1.0.00.<release_date>
 
 > **Note:** The name of the image has to be the same as the one you loaded on your local workstation when you launched the docker load command.
 
@@ -115,11 +113,10 @@ To start the container from the command-line, launch the following command by ad
 
 ### Installing with custom .PEM certificates
 To use custom certificates, modify the volume `<path_on_host_containing_certs>:/opt/wautils/certs` with the path of the directory that contains your certificates at the place of `<path_on_host_containing_certs>`. In the defined folder, add the following certificates:
-
+	 
       - ca.crt
       - tls.key
       - tls.crt
-
 ## Configuration Variables
 
 The following table lists the configurable variables for the z-centric Agent:
@@ -144,7 +141,6 @@ For example, specify the variable and its value as follows: LICENSE=ACCEPT
 
 
 
-
 ## Supported Docker versions
 This image is officially supported on Docker version 19.xx.xx, or later.
 
@@ -153,12 +149,11 @@ Support for versions earlier than 19.xx.xx, is provided on a best-effort basis.
 See the [Docker installation documentation](https://docs.docker.com/engine/installation/) for details on how to upgrade your Docker daemon.  
 
 
-
+  
 ## Limitations
 The owner of all product files is the wauser user, thus the product does not run as root, but as wauser only. Do not perform the login as root to start processes or run other commands such as Jnextplan, otherwise it might create some issues.
 
 On amd64 and Linux on Z platforms.
-
 
 
 
