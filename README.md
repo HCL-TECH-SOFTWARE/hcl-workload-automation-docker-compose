@@ -11,6 +11,7 @@ This readme file contains the high-level steps to deploy all of the Workload Aut
 * [Console](readmes/readme_CONSOLE.md)
 * [Dynamic Agent](readmes/readme_DYNAMIC_AGENT.md)
 * [Zcentric Agent](readmes/readme_ZCENTRIC_AGENT.md)
+* [FileProxy](fileproxy/README.md)
 
 ## Accessing the container images
 
@@ -24,9 +25,9 @@ You can access the HCL Workload Automation container images from the Entitled Re
 
  The images are as follows:
 
-* hclcr.io/wa/hcl-workload-automation-agent-dynamic:9.5.0.05.20211217
-* hclcr.io/wa/hcl-workload-automation-server:9.5.0.05.20211217
-* hclcr.io/wa/hcl-workload-automation-console:9.5.0.05.20211217
+* hclcr.io/wa/hcl-workload-automation-agent-dynamic:10.1.0.00.20220304
+* hclcr.io/wa/hcl-workload-automation-server:10.1.0.00.20220304
+* hclcr.io/wa/hcl-workload-automation-console:10.1.0.00.20220304
 
 
 ## Getting Started
