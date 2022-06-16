@@ -19,7 +19,7 @@ Docker adoption ensures standardization of your workload scheduling environment 
 - 9.5.0.05.20211217
  
  ## Supported platforms
- The supported operating systems are: Windows, Linux intel based 64-bit, and Linux on Z.
+ The supported operating systems are: Windows, Linux intel based 64-bit.
  
 ## Accessing the container images
 
