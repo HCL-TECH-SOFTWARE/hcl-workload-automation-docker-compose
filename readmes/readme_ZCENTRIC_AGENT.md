@@ -16,6 +16,7 @@ z-centric Agent has the following restriction:
 
 
 ## Supported tags
+- 9.5.0.06.20220617
 - 9.5.0.05.20211217
 - 9.5.0.04.20210804
 
@@ -41,7 +42,7 @@ You can access the z-centric Agent container image from the Entitled Registry:
  The image is as follows:
 
 
-* hclcr.io/wa/hcl-workload-automation-agent-dynamic:9.5.0.05.20211217
+* hclcr.io/wa/hcl-workload-automation-agent-dynamic:9.5.0.06.20220617
 
 
 ### From HCL Flexera
@@ -106,7 +107,7 @@ To start the container from the command-line, launch the following command by ad
         -e LICENSE=ACCEPT \
 	    -e ZCONN_URL=https://zconn_hostname:zconn_port/twsz/v1/plugin \
         -v workload-automation-agent-zcentric-data:/home/wauser \
-        hcl-workload-automation-agent-zcentric:9.5.0.05.<release_date>
+        hcl-workload-automation-agent-zcentric:9.5.0.06.<release_date>
 
 > **Note:** The name of the image has to be the same as the one you loaded on your local workstation when you launched the docker load command.
 
