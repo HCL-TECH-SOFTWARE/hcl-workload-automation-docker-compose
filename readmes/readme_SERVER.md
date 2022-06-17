@@ -15,6 +15,7 @@ Docker adoption ensures standardization of your workload scheduling environment 
 
 
 ## Supported tags
+- 9.5.0.06.20220617
 - 9.5.0.05.20211217
 - 9.5.0.04.20210804
 
@@ -37,7 +38,7 @@ You can access the Server container image from the Entitled Registry:
  The image is as follows:
 
 
-* hclcr.io/wa/hcl-workload-automation-server:9.5.0.05.20211217
+* hclcr.io/wa/hcl-workload-automation-server:9.5.0.06.20220617
 
 ### From HCL Flexera
 
@@ -101,7 +102,7 @@ The HCL Workload Automation container has the following prerequisites:
 
    For example, use the following command to create a DB2 instance and schema:   
 
-       docker run --rm hcl-workload-automation-server:9.5.0.05 cat /opt/wa/TWS/tws_tools/create_database.sql >create_database.sql
+       docker run --rm hcl-workload-automation-server:9.5.0.06 cat /opt/wa/TWS/tws_tools/create_database.sql >create_database.sql
 
    Copy the "create_database.sql" file on the workstation where the DB2 has been installed, perform a login as administrator and run the following command:
 
@@ -125,7 +126,7 @@ To start the container from the command-line, launch the following command by ad
 		-e DB_ADMIN_USER=db_admin_user \
 		-e DB_ADMIN_PASSWORD=db_admin_password \
 			-v workload-automation-server-data:/home/wauser \
-		hcl-workload-automation-server:9.5.0.05.\<release_date>
+		hcl-workload-automation-server:9.5.0.06.\<release_date>
 
 > **Note:** The name of the image has to be the same as the one you loaded on your local workstation when you launched the docker load command.
 
