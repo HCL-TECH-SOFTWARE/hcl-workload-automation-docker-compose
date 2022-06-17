@@ -16,8 +16,9 @@ Docker adoption ensures standardization of your workload scheduling environment 
 ## Supported tags
 - 10.1.0.00.20220512
 - 10.1.0.00.20220304
-- 9.5.0.05.20211217
 - 9.5.0.06.20220617
+- 9.5.0.05.20211217
+
  
  ## Supported platforms
  The supported operating systems are: Windows, Linux intel based 64-bit, and Linux on Z.
