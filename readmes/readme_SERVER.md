@@ -14,6 +14,7 @@ Docker adoption ensures standardization of your workload scheduling environment 
 
 
 ## Supported tags
+- 10.1.0.00.20220722
 - 10.1.0.00.20220512
 - 10.1.0.00.20220304
 - 9.5.0.06.20220617
@@ -38,7 +39,7 @@ You can access the Server container image from the Entitled Registry:
  The image is as follows:
 
 
-* hclcr.io/wa/hcl-workload-automation-server:10.1.0.00.20220512
+* hclcr.io/wa/hcl-workload-automation-server:10.1.0.00.20220722
 
 ### From HCL Flexera
 
@@ -241,6 +242,25 @@ In both server and console charts, useCustomizedCert property must be set on "tr
 
 The "wa_ltpa.xml" file must be placed in the volume that stores all custom liberty configuration (on both server and console charts).
 
+## Report CLI 	
+
+To run reports in batch mode, perform the following steps:
+
+1. Browse to `/home/wauser/wadata/config/report`
+2. Open the **common.properties** file in a flat-text editor.
+3. Edit the file inserting the information for your database. Instructions on editing the file are provided in the file itself. 
+
+The Report CLI is now ready for running. To start the Report CLI, run the following command: `./reportcli.sh`
+
+Consider the following example:
+
+`./reportcli.sh -p reports/templates/jrh.properties -r my_report -commonPropsFile /home/wauser/wadata/config/report`
+
+For more information, see: 
+
+[Running batch reports from the command line interface](https://help.hcltechsw.com/workloadautomation/v101/distr/src_ref/awsrgbatchreps.html)
+
+	
 ## Installing Automation Hub integrations  
 
 You can extend Workload Automation with a number of out-of-the-box integrations, or plug-ins. Complete documentation for the integrations is available on [Automation Hub](https://www.yourautomationhub.io/). Use this procedure to integrate only the integrations you need to automate your business workflows.
