@@ -14,6 +14,7 @@ Docker adoption ensures standardization of your workload scheduling environment 
 
 
 ## Supported tags
+- 10.1.0.00.20220722
 - 10.1.0.00.20220512
 - 10.1.0.00.20220304
 - 9.5.0.06.20220617
@@ -40,7 +41,7 @@ You can access the Dynamic Agent container image from the Entitled Registry:
  The image is as follows:
 
 
-* hclcr.io/wa/hcl-workload-automation-agent-dynamic:10.1.0.00.20220512
+* hclcr.io/wa/hcl-workload-automation-agent-dynamic:10.1.0.00.20220722
 
 ### From HCL Flexera
 
