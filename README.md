@@ -91,3 +91,8 @@ For additional information on about the HCL Workload Automation, see the [online
 
 ## License
 The Dockerfile and associated scripts are licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0). HCL Workload Automation is licensed under the HCL  License Agreement. This license for HCL Workload Automation can be found [online](). Note that this license does not permit further distribution.
+
+
+### Infrastructure model
+
+![Infrastructure model](.infragenie/infrastructure_model.png)
