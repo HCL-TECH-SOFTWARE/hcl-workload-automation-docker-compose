@@ -60,7 +60,7 @@ Before you deploy HCL Workload Automation components on Linux on Z, see Deployin
 
 
 ## Getting Started 
-You can deploy the HCL Workload Automation containers using either Docker compose or Docker run. For both of these methods, ensure you download and install [Docker](https://www.docker.com). 
+You can dehttps://github.com/HCL-TECH-SOFTWARE/hcl-workload-automation-docker-compose/blob/WA-110716_giulia/readmes/readme_ZCENTRIC_AGENT.mdploy the HCL Workload Automation containers using either Docker compose or Docker run. For both of these methods, ensure you download and install [Docker](https://www.docker.com). 
 
 ### Getting started with Docker compose
 
@@ -119,6 +119,37 @@ To use custom certificates, modify the volume `<path_on_host_containing_certs>:/
       - ca.crt
       - tls.key
       - tls.crt
+      
+### Enabling communication with the server using JWT 
+
+If you want to install the agents without using certificates and also enable communication with the server through the JWT Token, add a secret with the engine credentials.
+Ensure the following parameters are set in the secret: 
+
+**WA_USER_ENGINE**
+
+**WA_USER_ENGINE_PASSWORD**
+
+Where
+
+**WA_USER_ENGINE** is the engine user encoded in base64 encoding
+
+**WA_USER_ENGINE_PASSWORD** is the engine password encoded in base64 encoding
+
+Ensure the name of the secret is  < namespace >-waagent-secret.
+
+See the following example:
+
+		apiVersion: v1 
+		kind: Secret 
+		metadata: 
+		  name: <namespace>-waagent-secret
+		  namespace: <namespace>
+		type: "Opaque"
+		data:  
+  		  WA_USER_ENGINE: <engineUserBase64>
+  		  WA_USER_ENGINE_PASSWORD: <engineUserPasswordBase64>
+
+  
 ## Configuration Variables
 
 The following table lists the configurable variables for the Dynamic Agent:

@@ -29,6 +29,14 @@ You can access the HCL Workload Automation container images from the Entitled Re
 * hclcr.io/wa/hcl-workload-automation-server:10.1.0.00.20220512
 * hclcr.io/wa/hcl-workload-automation-console:10.1.0.00.20220512
 
+## Other supported tags
+
+* 10.1.0.00.20220722
+* 10.1.0.00.20220512
+* 10.1.0.00.20220304
+* 9.5.0.06.20220617
+* 9.5.0.05.20211217
+
 
 ## Getting Started
 
