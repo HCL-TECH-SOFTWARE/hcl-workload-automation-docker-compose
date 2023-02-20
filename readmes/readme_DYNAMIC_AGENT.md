@@ -128,7 +128,10 @@ If you want to install the agents without using certificates and also enable com
 
 **WA_USER_ENGINE_PASSWORD**
 
+As an alternative to specifying user name and password, you can use the **WA_API_KEY** configuration variable and specify a valid API key. Ensure the API key has not expired.
+
 The variables are described in the **Configuration Variables** section.
+
   
 ## Configuration Variables
 
@@ -150,6 +153,7 @@ For example, specify the variable and its value as follows: LICENSE=ACCEPT
 | WA_USER_ENGINE                 | The user for which you have installed the master domain manager to which the agent is connecting                                                                                                                                                                                                                 | no          | wa_user       |
 | WA_USER_ENGINE_PASSWORD                 | The password for the user for which you have installed the master domain manager to which the agent is connecting                                                                                                                                                                                                                 | no          | wa_user_password       |
 | SSL_PASSWORD              | The password to open the private key (tls.key)                                                                                                                                                                                                          | Only if you use custom certificates in PEM format         |                      |
+| WA_API_KEY              | A valid API key                                                                                                                                                                                                          | no         |                      |
 
 
 
