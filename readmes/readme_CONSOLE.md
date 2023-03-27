@@ -15,6 +15,8 @@ Docker adoption ensures standardization of your workload scheduling environment 
 
 
 ## Supported tags
+
+- 9.5.0.06.20230324
 - 9.5.0.06.20221216
 - 9.5.0.06.20220617
 - 9.5.0.05.20211217
@@ -40,7 +42,7 @@ You can access the Console container image from the Entitled Registry:
  The image is as follows:
 
 
-* hclcr.io/wa/hcl-workload-automation-console:9.5.0.06.20221216
+* hclcr.io/wa/hcl-workload-automation-console:9.5.0.06.20230324
 
 ### From HCL Flexera
 
