@@ -62,7 +62,7 @@ Before you deploy HCL Workload Automation components on Linux on Z, see Deployin
 
 
 ## Getting Started 
-You can dehttps://github.com/HCL-TECH-SOFTWARE/hcl-workload-automation-docker-compose/blob/WA-110716_giulia/readmes/readme_ZCENTRIC_AGENT.mdploy the HCL Workload Automation containers using either Docker compose or Docker run. For both of these methods, ensure you download and install [Docker](https://www.docker.com). 
+You can deploy the HCL Workload Automation containers using either Docker compose or Docker run. For both of these methods, ensure you download and install [Docker](https://www.docker.com). 
 
 ### Getting started with Docker compose
 
