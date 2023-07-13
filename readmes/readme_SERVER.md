@@ -139,16 +139,6 @@ To use custom certificates, modify the volume `<path_on_host_containing_certs>:/
       - tls.key
       - tls.crt
 
-In order to generate these files, please check https://github.com/HCL-TECH-SOFTWARE/hcl-workload-automation-docker-compose/blob/master/README.md
-
-## Docker custom certificates enhancements on the docker-compose.yaml file
-
-Perform the following changes in the docker-compose.yaml file:
-
-- SSL_PASSWORD=<YOUR_SSL_PASSWORD> to be set under the environment section
-- <path_to_certificates_folder>:/opt/wautils/certs under the volumes section
-
-Where <path_to_certificates_folder> is the path to the <certificates_folder> on your machine where the custom certificates generated is placed, and <SSL_PASSWORD> is the password of the Trust Store where the certificates is be stored in your component.
  
 ##
 ### Additional configuration
