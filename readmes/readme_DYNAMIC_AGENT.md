@@ -137,7 +137,7 @@ The variables are described in the **Configuration Variables** section.
   
 
 
-**Enabling installation of dynamic agents on container with a remote gateway**
+### Enabling installation of dynamic agents on container with a remote gateway
 
 To install a dynamic agent with remote gateway you must have a dynamic agent already installed with a local gateway. The newly added parameters in version 10.2 facilitates you to deploy a new dynamic agent and enables the communication directly with another agent gateway.
 
