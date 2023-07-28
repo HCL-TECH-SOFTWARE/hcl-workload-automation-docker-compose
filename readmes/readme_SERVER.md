@@ -140,6 +140,9 @@ To use custom certificates, modify the volume `<path_on_host_containing_certs>:/
       - ca.crt
       - tls.key
       - tls.crt
+
+ 
+##
 ### Additional configuration
 The following information applies to both deploying with Docker compose and Docker run.
 
