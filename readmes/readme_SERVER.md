@@ -14,7 +14,10 @@ Docker adoption ensures standardization of your workload scheduling environment 
 
 
 ## Supported tags
+- 10.2.0.00.20230728
+- 10.1.0.03.20230511-amd64
 - 10.1.0.02.20230301
+- 10.1.0.01.20221130
 - 10.1.0.00.20220722
 - 10.1.0.00.20220512
 - 10.1.0.00.20220304
@@ -137,6 +140,9 @@ To use custom certificates, modify the volume `<path_on_host_containing_certs>:/
       - ca.crt
       - tls.key
       - tls.crt
+
+ 
+##
 ### Additional configuration
 The following information applies to both deploying with Docker compose and Docker run.
 
