@@ -31,6 +31,7 @@ You can access the HCL Workload Automation container images from the Entitled Re
 
 ## Other supported tags
 * 10.2.0.00.20230728
+* 10.1.0.04.20231201
 * 10.1.0.03.20230511-amd64
 * 10.1.0.02.20230301
 * 10.1.0.01.20221130
