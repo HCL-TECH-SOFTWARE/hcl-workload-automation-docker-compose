@@ -241,7 +241,7 @@ To create new LTPA token, launch the following command:
 
   where:
   - **<host_dir>** is an existing folder on the local machine where docker runs
-  - **<keys_password>** is LTPA keys password ( for further details, see the [online](https://www.ibm.com/support/knowledgecenter/en/SSGSPN_10.1.0/com.ibm.tivoli.itws.doc_9.5/distr/src_ad/awsadshareltpa.htm) documentation).
+  - **<keys_password>** is LTPA keys password ( for further details, see the [online](https://help.hcltechsw.com/workloadautomation/v1021/distr/src_pi/awspicfgLDAP.html) documentation).
 	
 The "ltpa.keys" and "wa_ltpa.xml" files are created in the local folder \<hostdir>.
 
