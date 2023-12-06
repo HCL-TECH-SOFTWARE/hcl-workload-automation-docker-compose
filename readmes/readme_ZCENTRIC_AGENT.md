@@ -15,6 +15,7 @@ z-centric Agent has the following restriction:
 
 
 ## Supported tags
+- 10.2.0.01.20231201
 - 10.2.0.00.20230728
 - 10.1.0.04.20231201
 - 10.1.0.03.20230511-amd64
@@ -47,7 +48,7 @@ You can access the z-centric Agent container image from the Entitled Registry:
  The image is as follows:
 
 
-* hclcr.io/wa/hcl-workload-automation-agent-dynamic:10.1.0.00.20220722
+* hclcr.io/wa/hcl-workload-automation-agent-dynamic:10.2.0.01.20231201
 
 
 ### From HCL Flexera
@@ -59,7 +60,7 @@ If you are accessing the images from HCL Flexera, use the following command to u
   where <tar_name> is the name of the .tar file containing the image.
 
 
-Before you deploy HCL Workload Automation components on Linux on Z, see Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v101/distr/src_pi/awspizLinuxDeployments.html)
+Before you deploy HCL Workload Automation components on Linux on Z, see Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1021/distr/src_pi/awspizLinuxDeployments.html)
 
 
 
@@ -111,7 +112,7 @@ To start the container from the command-line, launch the following command by ad
         -e LICENSE=ACCEPT \
 	    -e ZCONN_URL=https://zconn_hostname:zconn_port/twsz/v1/plugin \
         -v workload-automation-agent-zcentric-data:/home/wauser \
-        hcl-workload-automation-agent-zcentric:10.1.0.00.<release_date>
+        hcl-workload-automation-agent-zcentric:<version_number>.<release_date>
 
 > **Note:** The name of the image has to be the same as the one you loaded on your local workstation when you launched the docker load command.
 
@@ -197,7 +198,7 @@ On amd64 and Linux on Z platforms.
 
 
 ## Additional Information
-For additional information about how to use the HCL Workload Automation Agent, see the [online](https://workloadautomation.hcldoc.com/help/topic/com.hcl.wa.doc_9.5/distr/src_pi/awspipartdepcont.htm) documentation. For technical issues, search for Workload Scheduler or Workload Automation on [StackOverflow](http://stackoverflow.com/search?q=workload+scheduler).
+For additional information about how to use the HCL Workload Automation Agent, see the [online](https://help.hcltechsw.com/workloadautomation/v1021/index.html) documentation. For technical issues, search for Workload Scheduler or Workload Automation on [StackOverflow](http://stackoverflow.com/search?q=workload+scheduler).
 
 
 ## License
