@@ -14,6 +14,7 @@ Docker adoption ensures standardization of your workload scheduling environment 
 
 
 ## Supported tags
+- 10.2.0.01.20231201
 - 10.2.0.00.20230728
 - 10.1.0.04.20231201
 - 10.1.0.03.20230511-amd64
@@ -45,7 +46,7 @@ You can access the Dynamic Agent container image from the Entitled Registry:
  The image is as follows:
 
 
-* hclcr.io/wa/hcl-workload-automation-agent-dynamic:10.1.0.00.20220722
+* hclcr.io/wa/hcl-workload-automation-agent-dynamic:10.2.0.01.20231201
 
 ### From HCL Flexera
 
@@ -58,7 +59,7 @@ If you are accessing the images from HCL Flexera, use the following command to u
 
 
 
-Before you deploy HCL Workload Automation components on Linux on Z, see Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v101/distr/src_pi/awspizLinuxDeployments.html)
+Before you deploy HCL Workload Automation components on Linux on Z, see Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1021/distr/src_pi/awspizLinuxDeployments.html)
 
 
 
@@ -109,7 +110,7 @@ To start the container from the command-line, launch the following command by ad
         -e SERVERPORT=server_port \
         -e LICENSE=ACCEPT \
         -v workload-automation-agent-dynamic-data:/home/wauser \
-        hcl-workload-automation-agent-dynamic:10.1.0.00.<release_date>
+        hcl-workload-automation-agent-dynamic:<version_number>.<release_date>
 
 
 > **Note:** The name of the image has to be the same as the one you loaded on your local workstation when you launched the docker load command.
@@ -141,7 +142,7 @@ The variables are described in the **Configuration Variables** section.
 
 ### Enabling installation of dynamic agents on container with a remote gateway
 
-To install a dynamic agent with remote gateway you must have a dynamic agent already installed with a local gateway. The newly added parameters in version 10.2 facilitates you to deploy a new dynamic agent and enables the communication directly with another agent gateway.
+To install a dynamic agent with remote gateway you must have a dynamic agent already installed with a local gateway.
 
 To enable the parameters for Docker:
 
@@ -237,7 +238,7 @@ If you want to use custom Agent certificates, uncomment the "BEGIN SECTION - Cer
 
     
 where TWSClientKeyStoreJKS.jks  TWSClientKeyStoreJKS.sth  TWSClientKeyStore.kdb  TWSClientKeyStore.sth are the container keystore and stash file containing your customized certificates.
-For details about custom certificates, see the [online](https://help.hcltechsw.com/workloadautomation/v101/distr/src_ad/awsadMDMDAcomm.html) documentation.
+For details about custom certificates, see the [online](https://help.hcltechsw.com/workloadautomation/v1021/distr/src_ad/awsadMDMDAcomm.html) documentation.
     
     See an example where `release_name` = myname and `namespace` = default: 
     
@@ -277,7 +278,7 @@ On amd64 and Linux on Z platforms.
 
 
 ## Additional Information
-For additional information about how to use the HCL Workload Automation Agent, see the [online](https://workloadautomation.hcldoc.com/help/topic/com.hcl.wa.doc_9.5/distr/src_pi/awspipartdepcont.htm) documentation. For technical issues, search for Workload Scheduler or Workload Automation on [StackOverflow](http://stackoverflow.com/search?q=workload+scheduler).
+For additional information about how to use the HCL Workload Automation Agent, see the [online](https://help.hcltechsw.com/workloadautomation/v1021/index.html) documentation. For technical issues, search for Workload Scheduler or Workload Automation on [StackOverflow](http://stackoverflow.com/search?q=workload+scheduler).
 
 
 ## License

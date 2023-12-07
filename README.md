@@ -25,11 +25,12 @@ You can access the HCL Workload Automation container images from the Entitled Re
 
  The images are as follows:
 
-* hclcr.io/wa/hcl-workload-automation-agent-dynamic:10.2.0.00.20230728
-* hclcr.io/wa/hcl-workload-automation-server:10.2.0.00.20230728
-* hclcr.io/wa/hcl-workload-automation-console:10.2.0.00.20230728
+* hclcr.io/wa/hcl-workload-automation-agent-dynamic:10.2.0.01.20231201
+* hclcr.io/wa/hcl-workload-automation-server:10.2.0.01.20231201
+* hclcr.io/wa/hcl-workload-automation-console:10.2.0.01.20231201
 
 ## Other supported tags
+* 10.2.0.01.20231201
 * 10.2.0.00.20230728
 * 10.1.0.04.20231201
 * 10.1.0.03.20230511-amd64
@@ -168,7 +169,7 @@ The owner of all product files is the wauser user, thus the product does not run
 Limited to amd64 and Linux on Z platforms.
 
 ## Additional Information
-For additional information on about the HCL Workload Automation, see the [online](https://help.hcltechsw.com/workloadautomation/v95/index.html) documentation. For technical issues, search for Workload Scheduler or Workload Automation on [StackOverflow](http://stackoverflow.com/search?q=workload+scheduler).
+For additional information on about the HCL Workload Automation, see the [online](https://help.hcltechsw.com/workloadautomation/v1021/index.html) documentation. For technical issues, search for Workload Scheduler or Workload Automation on [StackOverflow](http://stackoverflow.com/search?q=workload+scheduler).
 
 ## License
 The Dockerfile and associated scripts are licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0). HCL Workload Automation is licensed under the HCL  License Agreement. This license for HCL Workload Automation can be found [online](). Note that this license does not permit further distribution.
