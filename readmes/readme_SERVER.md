@@ -14,7 +14,9 @@ Docker adoption ensures standardization of your workload scheduling environment 
 
 
 ## Supported tags
-- 10.2.0.01.20231201
+- 10.2.3.00.20241122
+- 10.2.2.00.20240424
+- 10.2.1.00.20231201
 - 10.2.0.00.20230728
 - 10.1.0.05.20240712
 - 10.1.0.04.20231201
@@ -46,7 +48,7 @@ You can access the Server container image from the Entitled Registry:
  The image is as follows:
 
 
-* hclcr.io/wa/hcl-workload-automation-server:10.2.0.01.20231201
+* hclcr.io/wa/hcl-workload-automation-server:10.2.3.00.20241122
 
 ### From HCL Flexera
 
@@ -60,7 +62,7 @@ If you are accessing the images from HCL Flexera, use the following command to u
 
 
 
-Before you deploy HCL Workload Automation components on Linux on Z, see Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1021/distr/src_pi/awspizLinuxDeployments.html)
+Before you deploy HCL Workload Automation components on Linux on Z, see Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1023/distr/src_pi/awspizLinuxDeployments.html)
 
 
 ## Getting Started
@@ -255,7 +257,7 @@ To create new LTPA token, launch the following command:
 
   where:
   - **<host_dir>** is an existing folder on the local machine where docker runs
-  - **<keys_password>** is LTPA keys password ( for further details, see the [online](https://help.hcltechsw.com/workloadautomation/v1021/distr/src_pi/awspicfgLDAP.html) documentation).
+  - **<keys_password>** is LTPA keys password ( for further details, see the [online](https://help.hcltechsw.com/workloadautomation/v1023/distr/src_pi/awspicfgLDAP.html) documentation).
 	
 The "ltpa.keys" and "wa_ltpa.xml" files are created in the local folder \<hostdir>.
 
@@ -281,7 +283,7 @@ Consider the following example:
 
 For more information, see: 
 
-[Running batch reports from the command line interface](https://help.hcltechsw.com/workloadautomation/v1021/distr/src_ref/awsrgbatchreps.html)
+[Running batch reports from the command line interface](https://help.hcltechsw.com/workloadautomation/v1023/distr/src_ref/awsrgbatchreps.html)
 
 	
 ## Installing Automation Hub integrations  
@@ -295,7 +297,7 @@ You can also extend Workload Automation with custom plug-ins or integrations tha
 
 ## Metrics Monitoring
 
-Workload Automation exposes a number of metrics to provide you with insight into the state, health, and performance of your environment and infrastructure. You can access the product APIs for monitoring and retrieving insightful metrics data. The metrics are exposed and can be visualized with tools for displaying application metrics such as, the open source tool Grafana. If you use Grafana, you can take advantage of the preconfigured dashboard that is available with the deployment of the Dynamic Workload Console and the server  components. For more information about the metrics available, see [Metrics monitoring](https://help.hcltechsw.com/workloadautomation/v1021/distr/src_ref/awsrgmonprom.html) documentation. In a Docker environment, by default, access to the metrics does not require authentication. However, if you want to specify a different user that can access the metrics securely using credentials, modify the prometheus.xml file that you will find automatically created in a Docker environment, adding the additional users.
+Workload Automation exposes a number of metrics to provide you with insight into the state, health, and performance of your environment and infrastructure. You can access the product APIs for monitoring and retrieving insightful metrics data. The metrics are exposed and can be visualized with tools for displaying application metrics such as, the open source tool Grafana. If you use Grafana, you can take advantage of the preconfigured dashboard that is available with the deployment of the Dynamic Workload Console and the server  components. For more information about the metrics available, see [Metrics monitoring](https://help.hcltechsw.com/workloadautomation/v1023/distr/src_ref/awsrgmonprom.html) documentation. In a Docker environment, by default, access to the metrics does not require authentication. However, if you want to specify a different user that can access the metrics securely using credentials, modify the prometheus.xml file that you will find automatically created in a Docker environment, adding the additional users.
 
 
 
@@ -337,7 +339,7 @@ This limitation applies to only to the stand-alone Docker environment.
 
 
 ## Additional Information
-For additional information about how to use HCL Workload Automation, see the [online](https://help.hcltechsw.com/workloadautomation/v1021/index.html) documentation. For technical issues, search for Workload Scheduler or Workload Automation on [StackOverflow](http://stackoverflow.com/search?q=workload+scheduler).
+For additional information about how to use HCL Workload Automation, see the [online](https://help.hcltechsw.com/workloadautomation/v1023/index.html) documentation. For technical issues, search for Workload Scheduler or Workload Automation on [StackOverflow](http://stackoverflow.com/search?q=workload+scheduler).
 
 
 ## License
