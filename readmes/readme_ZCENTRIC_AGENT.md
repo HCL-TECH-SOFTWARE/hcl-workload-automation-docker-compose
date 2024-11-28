@@ -15,7 +15,9 @@ z-centric Agent has the following restriction:
 
 
 ## Supported tags
-- 10.2.0.01.20231201
+- 10.2.3.00.20241122
+- 10.2.2.00.20240424
+- 10.2.1.00.20231201
 - 10.2.0.00.20230728
 - 10.1.0.05.20240712
 - 10.1.0.04.20231201
@@ -49,7 +51,7 @@ You can access the z-centric Agent container image from the Entitled Registry:
  The image is as follows:
 
 
-* hclcr.io/wa/hcl-workload-automation-agent-dynamic:10.2.0.01.20231201
+* hclcr.io/wa/hcl-workload-automation-agent-dynamic:10.2.3.00.20241122
 
 
 ### From HCL Flexera
@@ -61,7 +63,7 @@ If you are accessing the images from HCL Flexera, use the following command to u
   where <tar_name> is the name of the .tar file containing the image.
 
 
-Before you deploy HCL Workload Automation components on Linux on Z, see Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1021/distr/src_pi/awspizLinuxDeployments.html)
+Before you deploy HCL Workload Automation components on Linux on Z, see Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1023/distr/src_pi/awspizLinuxDeployments.html)
 
 
 
@@ -199,7 +201,7 @@ On amd64 and Linux on Z platforms.
 
 
 ## Additional Information
-For additional information about how to use the HCL Workload Automation Agent, see the [online](https://help.hcltechsw.com/workloadautomation/v1021/index.html) documentation. For technical issues, search for Workload Scheduler or Workload Automation on [StackOverflow](http://stackoverflow.com/search?q=workload+scheduler).
+For additional information about how to use the HCL Workload Automation Agent, see the [online](https://help.hcltechsw.com/workloadautomation/v1023/index.html) documentation. For technical issues, search for Workload Scheduler or Workload Automation on [StackOverflow](http://stackoverflow.com/search?q=workload+scheduler).
 
 
 ## License
