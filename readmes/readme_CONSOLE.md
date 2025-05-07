@@ -61,7 +61,7 @@ If you are accessing the images from HCL Flexera, use the following command to u
 
 
 
-Before you deploy HCL Workload Automation components on Linux on Z, see Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1021/distr/src_pi/awspizLinuxDeployments.html)
+Before you deploy HCL Workload Automation components on Linux on Z, see Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1024/distr/src_pi/awspizLinuxDeployments.html)
 
 
 
@@ -218,7 +218,7 @@ To create new LTPA token, issue the following command:
 
   where:
   - **<host_dir>** is an existing folder on the local machine where docker runs
-  - **<keys_password>** is LTPA keys password ( for further details, see the [online](https://help.hcltechsw.com/workloadautomation/v1021/distr/src_pi/awspicfgLDAP.html) documentation).
+  - **<keys_password>** is LTPA keys password ( for further details, see the [online](https://help.hcltechsw.com/workloadautomation/v1024/distr/src_pi/awspicfgLDAP.html) documentation).
 	
 The "ltpa.keys" and "wa_ltpa.xml" files are created in the local folder \<hostdir>.
 
@@ -331,7 +331,7 @@ Proceed to deploy the product components. After the deployment, you can include 
 
 ## Metrics Monitoring
 
-Workload Automation exposes a number of metrics to provide you with insight into the state, health, and performance of your environment and infrastructure. You can access the product APIs for monitoring and retrieving insightful metrics data. The metrics are exposed and can be visualized with tools for displaying application metrics such as, the open source tool Grafana. If you use Grafana, you can take advantage of the preconfigured dashboard that is available with the deployment of the Dynamic Workload Console and the server  components. For more information about the metrics available, see [Metrics monitoring](https://help.hcltechsw.com/workloadautomation/v1021/distr/src_ref/awsrgmonprom.html) documentation. In a Docker environment, by default, access to the metrics does not require authentication. However, if you want to specify a different user that can access the metrics securely using credentials, modify the prometheus.xml file that you will find automatically created in a Docker environment, adding the additional users.
+Workload Automation exposes a number of metrics to provide you with insight into the state, health, and performance of your environment and infrastructure. You can access the product APIs for monitoring and retrieving insightful metrics data. The metrics are exposed and can be visualized with tools for displaying application metrics such as, the open source tool Grafana. If you use Grafana, you can take advantage of the preconfigured dashboard that is available with the deployment of the Dynamic Workload Console and the server  components. For more information about the metrics available, see [Metrics monitoring](https://help.hcltechsw.com/workloadautomation/v1024/distr/src_ref/awsrgmonprom.html) documentation. In a Docker environment, by default, access to the metrics does not require authentication. However, if you want to specify a different user that can access the metrics securely using credentials, modify the prometheus.xml file that you will find automatically created in a Docker environment, adding the additional users.
 
 
 ## Supported Docker versions
@@ -351,7 +351,7 @@ The HCL Workload Automation container has the following limitations:
 
 
 ## Additional Information
-For additional information about how to use the HCL Workload Automation, see the [online](https://help.hcltechsw.com/workloadautomation/v1021/index.html) documentation. For technical issues, search for Workload Scheduler or Workload Automation on [StackOverflow](http://stackoverflow.com/search?q=workload+scheduler).
+For additional information about how to use the HCL Workload Automation, see the [online](https://help.hcltechsw.com/workloadautomation/v1024/index.html) documentation. For technical issues, search for Workload Scheduler or Workload Automation on [StackOverflow](http://stackoverflow.com/search?q=workload+scheduler).
 
 
 ## License
