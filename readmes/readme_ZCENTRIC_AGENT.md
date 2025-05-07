@@ -15,6 +15,7 @@ z-centric Agent has the following restriction:
 
 
 ## Supported tags
+- 10.2.4.00.20250423
 - 10.2.0.01.20231201
 - 10.2.0.00.20230728
 - 10.1.0.05.20240712
