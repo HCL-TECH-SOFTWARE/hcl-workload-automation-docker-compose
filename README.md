@@ -25,11 +25,12 @@ You can access the HCL Workload Automation container images from the Entitled Re
 
  The images are as follows:
 
-* hclcr.io/wa/hcl-workload-automation-agent-dynamic:10.2.3.00.20241122
-* hclcr.io/wa/hcl-workload-automation-server:10.2.3.00.20241122
-* hclcr.io/wa/hcl-workload-automation-console:10.2.3.00.20241122
+* hclcr.io/wa/hcl-workload-automation-agent-dynamic: 10.2.4.00.20250423
+* hclcr.io/wa/hcl-workload-automation-server: 10.2.4.00.20250423
+* hclcr.io/wa/hcl-workload-automation-console: 10.2.4.00.20250423
 
 ## Other supported tags
+* 10.2.3.00.20241122
 * 10.2.0.01.20231201
 * 10.2.0.00.20230728
 * 10.1.0.05.20240712
