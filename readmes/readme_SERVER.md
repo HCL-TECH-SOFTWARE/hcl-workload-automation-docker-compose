@@ -61,7 +61,7 @@ If you are accessing the images from HCL Flexera, use the following command to u
 
 
 
-Before you deploy HCL Workload Automation components on Linux on Z, see Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1021/distr/src_pi/awspizLinuxDeployments.html)
+Before you deploy HCL Workload Automation components on Linux on Z, see Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1024/distr/src_pi/awspizLinuxDeployments.html)
 
 
 ## Getting Started
