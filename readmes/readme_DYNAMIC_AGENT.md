@@ -61,7 +61,7 @@ If you are accessing the images from HCL Flexera, use the following command to u
 
 
 
-Before you deploy HCL Workload Automation components on Linux on Z, see Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1021/distr/src_pi/awspizLinuxDeployments.html)
+Before you deploy HCL Workload Automation components on Linux on Z, see Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1024/distr/src_pi/awspizLinuxDeployments.html)
 
 
 
@@ -240,7 +240,7 @@ If you want to use custom Agent certificates, uncomment the "BEGIN SECTION - Cer
 
     
 where TWSClientKeyStoreJKS.jks  TWSClientKeyStoreJKS.sth  TWSClientKeyStore.kdb  TWSClientKeyStore.sth are the container keystore and stash file containing your customized certificates.
-For details about custom certificates, see the [online](https://help.hcltechsw.com/workloadautomation/v1021/distr/src_ad/awsadMDMDAcomm.html) documentation.
+For details about certificates, see  [Configuring secure communications](https://[help.hcltechsw.com/workloadautomation/v1021/distr/src_ad/awsadMDMDAcomm.html](https://help.hcl-software.com/workloadautomation/v1024/distr/src_ad/awsadcert.html)).
     
     See an example where `release_name` = myname and `namespace` = default: 
     
@@ -280,7 +280,7 @@ On amd64 and Linux on Z platforms.
 
 
 ## Additional Information
-For additional information about how to use the HCL Workload Automation Agent, see the [online](https://help.hcltechsw.com/workloadautomation/v1021/index.html) documentation. For technical issues, search for Workload Scheduler or Workload Automation on [StackOverflow](http://stackoverflow.com/search?q=workload+scheduler).
+For additional information about how to use the HCL Workload Automation Agent, see the [online](https://help.hcltechsw.com/workloadautomation/v1024/index.html) documentation. For technical issues, search for Workload Scheduler or Workload Automation on [StackOverflow](http://stackoverflow.com/search?q=workload+scheduler).
 
 
 ## License
