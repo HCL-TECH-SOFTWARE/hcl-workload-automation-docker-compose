@@ -240,7 +240,7 @@ If you want to use custom Agent certificates, uncomment the "BEGIN SECTION - Cer
 
     
 where TWSClientKeyStoreJKS.jks  TWSClientKeyStoreJKS.sth  TWSClientKeyStore.kdb  TWSClientKeyStore.sth are the container keystore and stash file containing your customized certificates.
-For details about certificates, see  [Configuring secure communications](https://[help.hcltechsw.com/workloadautomation/v1021/distr/src_ad/awsadMDMDAcomm.html](https://help.hcl-software.com/workloadautomation/v1024/distr/src_ad/awsadcert.html)).
+For details about certificates, see  [Configuring secure communications](https://[help.hcltechsw.com/workloadautomation/v1024/distr/src_ad/awsadcert.html](https://help.hcl-software.com/workloadautomation/v1024/distr/src_ad/awsadcert.html)).
     
     See an example where `release_name` = myname and `namespace` = default: 
     
