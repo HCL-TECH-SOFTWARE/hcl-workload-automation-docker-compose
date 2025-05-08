@@ -47,23 +47,7 @@ You can access the Dynamic Agent container image from the Entitled Registry:
         
 	docker login -u <your_username> -p <your_entitled_key> hclcr.io
 
- The image is as follows:
-
-
-* hclcr.io/wa/hcl-workload-automation-agent-dynamic:10.2.0.01.20231201
-
-### From HCL Flexera
-
-If you are accessing the images from HCL Flexera, use the following command to upload the image to your local Docker environment:
-
-     docker load -i <tar_name>
-	 
-  where <tar_name> is the name of the .tar file containing the image.
-
-
-
-
-Before you deploy HCL Workload Automation components on Linux on Z, see Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1024/distr/src_pi/awspizLinuxDeployments.html)
+Before you deploy HCL Workload Automation components on Linux on Z, see [Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1024/distr/src_pi/awspizLinuxDeployments.html)
 
 
 
