@@ -47,23 +47,8 @@ You can access the Console container image from the Entitled Registry:
         
 	docker login -u <your_username> -p <your_entitled_key> hclcr.io
 
- The image is as follows:
 
-
-* hclcr.io/wa/hcl-workload-automation-console:10.2.0.01.20231201
-
-### From HCL Flexera
-
-If you are accessing the images from HCL Flexera, use the following command to upload the image to your local Docker environment:
-
-     docker load -i <tar_name>
-	 
-  where <tar_name> is the name of the .tar file containing the image.
-
-
-
-
-Before you deploy HCL Workload Automation components on Linux on Z, see Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1024/distr/src_pi/awspizLinuxDeployments.html)
+Before you deploy HCL Workload Automation components on Linux on Z, see [Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1024/distr/src_pi/awspizLinuxDeployments.html)
 
 
 
@@ -178,7 +163,7 @@ For example, specify the variable and its value as follows: LICENSE=ACCEPT
 
 - DB variables
 
-The following variables are valid only if you set a database different from Derby, such as DB2, DB2 for z/OS (DB2Z), Informix (IDS), OneDB, MSSQL or Oracle. Use Derby database only for demo or test purposes.
+The following variables are valid only if you set a database different from Derby. Use Derby database only for demo or test purposes.
 
 | Variable                      | Description                                                                                                                                                                                                        | Mandatory   | Example             |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------                         | ----------  | ---------------     |
