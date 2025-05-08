@@ -12,6 +12,8 @@ Docker adoption ensures standardization of your workload scheduling environment 
 
 ## Supported tags
 - 10.2.4.00.20250423
+- 10.2.3.00.20241122
+- 10.2.2.00.20240424
 - 10.2.1.00.20231201
 - 10.2.0.00.20230728
 - 10.1.0.05.20240712
