@@ -11,6 +11,9 @@ Docker adoption ensures standardization of your workload scheduling environment 
 
 
 ## Supported tags
+- 10.2.4.00.20250423
+- 10.2.3.00.20241122
+- 10.2.2.00.20240424
 - 10.2.1.00.20231201
 - 10.2.0.00.20230728
 - 10.1.0.05.20240712
@@ -33,16 +36,8 @@ You can access the Workload Automation FileProxy container image from the Entitl
 3.  Run the following command to login into the HCL Entitled Registry:
         
 	docker login -u <your_username> -p <your_entitled_key> hclcr.io
- The image is as follows:
 
-* hclcr.io/wa/hcl-workload-automation-fileproxy:10.1.0.00.20210218
-
-### From HCL Flexera
-If you are accessing the images from HCL Flexera, use the following command to upload the image to your local Docker environment:
-     docker load -i <tar_name>
-  where <tar_name> is the name of the .tar file containing the image.
-
-Before you deploy HCL Workload Automation components on Linux on Z, see Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v101/distr/src_pi/awspizLinuxDeployments.html)
+Before you deploy HCL Workload Automation components on Linux on Z, see [Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1024/distr/src_pi/awspizLinuxDeployments.html)
 
 
 
@@ -113,7 +108,7 @@ On amd64 and Linux on Z platforms.
 
 
 ## Additional Information
-For additional information about how to use the HCL Workload Automation, see the [online]() documentation. For technical issues, search for Workload Scheduler or Workload Automation on [StackOverflow](http://stackoverflow.com/search?q=workload+scheduler).
+For additional information about how to use the HCL Workload Automation, see the [online](https://help.hcl-software.com/workloadautomation/v1024/index.html) documentation. For technical issues, search for Workload Scheduler or Workload Automation on [StackOverflow](http://stackoverflow.com/search?q=workload+scheduler).
 
 
 ## License
