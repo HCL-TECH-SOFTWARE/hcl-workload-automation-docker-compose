@@ -127,6 +127,29 @@ To start the container from the command-line, launch the following command by ad
 
 > **Note**: Internal ports are predefined and must not be changed. External ports can be customized.
 
+
+### Dynamic Workload Console and MSSQL
+
+If youu plan to use the Dynamic Worklkoad Console with MSSQL, perform the following steps:
+
+1) Create a new script with name dwc-console-scripts.yaml. The contents of the file is as follows:
+	```
+        {{- include "wa.init" (list . "waconsole") }}
+	apiVersion: v1
+	kind: ConfigMap
+	metadata:
+  	  name: {{ include "wa.fullName" . }}-console-scripts
+	data:
+  	  beforeLiberty.sh: |
+    	    
+	  #!/bin/sh
+   	
+    	echo "Setting the db.trustServerCertificate parameters..."
+    	sed -i '/<variable name="db.trustServerCertificate"/{s|value=".*"|value="false"|;b};3i <variable name="db.trustServerCertificate" value="false"/>' /homewauser/	wadata/usr/servers/dwcServer/configDropins/overrides/datasource.xml
+    	echo "...done!"```
+  
+3) 
+
 ### Installing with custom .PEM certificates
 To use custom certificates, modify the volume `<path_on_host_containing_certs>:/opt/wautils/certs` with the path of the directory that contains your certificates at the place of `<path_on_host_containing_certs>`. In the defined folder, add the following certificates:
 
