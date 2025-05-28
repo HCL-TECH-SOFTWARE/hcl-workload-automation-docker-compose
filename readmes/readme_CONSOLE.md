@@ -130,7 +130,7 @@ To start the container from the command-line, launch the following command by ad
 
 ### Dynamic Workload Console and MSSQL
 
-If you plan to use the Dynamic Worklkoad Console with MSSQL, perform the following steps:
+If you plan to use the Dynamic Workload Console with MSSQL, perform the following steps:
 
 1) Create a new script with name dwc-console-scripts.yaml. The contents of the file is as follows:
 	```
