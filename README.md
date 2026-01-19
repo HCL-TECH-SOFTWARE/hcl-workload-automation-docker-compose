@@ -50,6 +50,18 @@ You can access the HCL Workload Automation container images from the Entitled Re
 * 9.5.0.06.20220617
 * 9.5.0.05.20211217
 
+## Verifying container images with Cosign
+Container image verification is performed using the **Cosign** tool.
+
+-   **Prerequisites:** Ensure you have installed **Cosign version 3.0.3 or later**. Download the latest releases from the [Sigstore GitHub repository](https://github.com/sigstore/cosign/releases/).
+    
+-   **Registry:** Signatures are stored and managed on `hclcr.io`.
+    
+-   **Public key retrieval:** The public key required for verification is packaged within the **Quick start guide**, available for download on **MHS**.
+    
+
+**Verification command template:** `cosign verify --key <path_to_public_key> hclcr.io/<image_path>`
+
 ## Getting Started
 
 If you want to start the containers via Docker Compose, use the following command to clone the current repository:
