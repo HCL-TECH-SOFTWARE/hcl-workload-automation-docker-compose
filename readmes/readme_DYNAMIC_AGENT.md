@@ -50,7 +50,7 @@ You can access the Dynamic Agent container image from the Entitled Registry:
         
 	docker login -u <your_username> -p <your_entitled_key> hclcr.io
 
-Before you deploy HCL Workload Automation components on Linux on Z, see [Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1025/distr/src_pi/awspizLinuxDeployments.html)
+Before you deploy HCL Workload Automation components on Linux on Z, see [Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1028/distr/src_pi/awspizLinuxDeployments.html)
 
 
 
@@ -229,7 +229,7 @@ If you want to use custom Agent certificates, uncomment the "BEGIN SECTION - Cer
 
     
 where TWSClientKeyStoreJKS.jks  TWSClientKeyStoreJKS.sth  TWSClientKeyStore.kdb  TWSClientKeyStore.sth are the container keystore and stash file containing your customized certificates.
-For details about certificates, see  [Configuring secure communications](https://[help.hcltechsw.com/workloadautomation/v1025/distr/src_ad/awsadcert.html](https://help.hcl-software.com/workloadautomation/v1025/distr/src_ad/awsadcert.html)).
+For details about certificates, see  [Configuring secure communications](https://[help.hcltechsw.com/workloadautomation/v1028/distr/src_ad/awsadcert.html](https://help.hcl-software.com/workloadautomation/v1028/distr/src_ad/awsadcert.html)).
     
     See an example where `release_name` = myname and `namespace` = default: 
     
@@ -269,7 +269,7 @@ On amd64 and Linux on Z platforms.
 
 
 ## Additional Information
-For additional information about how to use the HCL Workload Automation Agent, see the [online](https://help.hcltechsw.com/workloadautomation/v1025/index.html) documentation. For technical issues, search for Workload Scheduler or Workload Automation on [StackOverflow](http://stackoverflow.com/search?q=workload+scheduler).
+For additional information about how to use the HCL Workload Automation Agent, see the [online](https://help.hcltechsw.com/workloadautomation/v1028/index.html) documentation. For technical issues, search for Workload Scheduler or Workload Automation on [StackOverflow](http://stackoverflow.com/search?q=workload+scheduler).
 
 
 ## License
