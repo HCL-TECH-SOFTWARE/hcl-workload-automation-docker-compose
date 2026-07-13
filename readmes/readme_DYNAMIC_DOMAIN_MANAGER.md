@@ -33,7 +33,7 @@ You can access the Dynamic domain manager container image from the Entitled Regi
         
 	docker login -u <your_username> -p <your_entitled_key> hclcr.io
 
-Before you deploy HCL Workload Automation components on Linux on Z, see [Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1025/distr/src_pi/awspizLinuxDeployments.html)
+Before you deploy HCL Workload Automation components on Linux on Z, see [Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1028/distr/src_pi/awspizLinuxDeployments.html)
 
 
 ## Getting Started
@@ -131,7 +131,7 @@ For information regarding additional configurations and integrations, refer to t
 
 ## Configuration Variables
 
-The following table lists the configurable variables for the dynamic domain manager:
+The following table lists the configurable variables for the Dynamic domain manager:
 
 For example, specify the variable and its value as follows: LICENSE=ACCEPT
 
@@ -199,25 +199,6 @@ For example, specify the variable and its value as follows: LICENSE=ACCEPT
 
 
 
-## Single Sign-On (SSO) configuration
-
-To enable SSO between console and server, LTPA tokens must be the same. The following procedure explains how to create LTPA tokens to be shared between server and console (this procedure must be run only once and not on both systems). 
-
-To create new LTPA token, launch the following command:
-
-     docker run -i --rm -v <host_dir>:/output hcl-workload-automation-server:<version_number> /opt/wautils/wa_create_ltpa_keys.sh -p <keys_password>
-
-  where:
-  - **<host_dir>** is an existing folder on the local machine where docker runs
-  - **<keys_password>** is LTPA keys password ( for further details, see [Configuring the Dynamic Workload Console for Single Sign-On](https://help.hcltechsw.com/workloadautomation/v1025/distr/src_ad/awsadtdwcsinglesignon.html).
-	
-The "ltpa.keys" and "wa_ltpa.xml" files are created in the local folder \<hostdir>.
-
-The "ltpa.keys" file must be placed into the volume that stores customized SSL certificates (on both server and console charts).
-
-In both server and console charts, useCustomizedCert property must be set on "true".
-
-The "wa_ltpa.xml" file must be placed in the volume that stores all custom liberty configuration (on both server and console charts).
 
 ## Report CLI 	
 
@@ -235,7 +216,7 @@ Consider the following example:
 
 For more information, see: 
 
-[Running batch reports from the command line interface](https://help.hcltechsw.com/workloadautomation/v1025/distr/src_ref/awsrgbatchreps.html)
+[Running batch reports from the command line interface](https://help.hcltechsw.com/workloadautomation/v1027/distr/src_ref/awsrgbatchreps.html)
 
 
 ## Supported Docker versions
@@ -258,7 +239,7 @@ For information about troubleshooting processes, refer to the Workload Automatio
 
 
 ## Additional Information
-For additional information about how to use HCL Workload Automation, see the [online](https://help.hcltechsw.com/workloadautomation/v1025/index.html) documentation. For technical issues, search for Workload Scheduler or Workload Automation on [StackOverflow](http://stackoverflow.com/search?q=workload+scheduler).
+For additional information about how to use HCL Workload Automation, see the [online](https://help.hcltechsw.com/workloadautomation/v1028/index.html) documentation. For technical issues, search for Workload Scheduler or Workload Automation on [StackOverflow](http://stackoverflow.com/search?q=workload+scheduler).
 
 
 ## License
