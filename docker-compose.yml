@@ -1,6 +1,6 @@
 ####################################################################
 # Licensed Materials - Property of HCL*
-# (c) Copyright HCL Technologies Ltd. 2018-2026. All rights reserved.
+# (c) Copyright HCL Technologies Ltd. 2018-2020. All rights reserved.
 #
 # * Trademark of HCL Technologies Limited
 ####################################################################
@@ -85,48 +85,6 @@ services:
         max-size: "10m"
         max-file: "5"
 
-  wa-ddm:
-    platform: linux/amd64
-    env_file:
-     - wa-ddm.env
-    environment:
-     #- DB_HOSTNAME=wa-db2 # The host name or IP address of database server (DO NOT TOUCH)
-     - SERVERHOSTNAME=wa-server #  The host name on which the server is contacted by internal dynamic agents (DO NOT TOUCH)
-     - SERVERPORT=31116 #  The port on which the server is contacted by internal dynamic agents (DO NOT TOUCH)
-     - HOSTNAME=wa-ddm # The fully qualified host name on which the server installation is running
-     - PUBLIC_HOSTNAME=wa-ddm # The fully qualified host name or IP address on which the dynamic domain manager is contacted by the dynamic agent
-     - DB_TYPE=POSTGRESQL # db2 | oracle
-     - DB_USER=ddmuser
-     - DB_PASSWORD=ddmpassword
-     - DB_NAME=DDMDB # The name of IWS Database
-     #- DB_PORT=50000 # The port of the database server
-     - WLP_SEC_PORT=31116
-     - WA_PASSWORD=wauser # The password of the user for which the component is installed
-     - LICENSE_SERVER_ID=AAAAAAA
-     - PUBLIC_PORT=33333
-     - DWBNAME=WA_DWB_DDM # The bridge workstation name registered on the MDM
-     - DDM_MASTER=WA_FTA # Master workstation name on MDM
-     - DDM_DOMAIN=DYNAMICDM # The dynamic domain name
-     - DDM_MDM_HOSTNAME=wa-server # MDM hostname reached by DDM
-     - DDM_MDM_HTTPS_PORT=31116 # MDM HTTPS port reached by DDM
-     - DATE_FORMAT=MM/DD/YYYY
-     - WA_DEBUG=YES
-     - SSL_PASSWORD=Hclrome00
-    image: wa-registry.prod.hclpnp.com/wa-dev/ibm-workload-automation-ddm:10.2.8.00.amd64
-    #image: ddm:fix
-    privileged: true
-    depends_on:
-     - wa-postgres-ddm
-    restart: "no"
-    ports: # port mapping "external:internal". Internal ports are predefined.
-     - "33333:31116" #HTTPS DDM
-     - "41115:31115" #HTTPS MASTER
-     - "41111:31111" #NETMAN
-    container_name: "wa-ddm"
-    hostname: wa-ddm
-    networks:
-     - wa-net
-  
   wa-agent:
     env_file:
      - wa.env
@@ -149,9 +107,75 @@ services:
       options:
         max-size: "10m"
         max-file: "5"
+  wa-db2-ddm:
+    env_file:
+     - wa-ddm.env
+    environment:
+     - DB2INST1_PASSWORD=db2inst1 # Password for DB2 user (DO NOT TOUCH)
+    build: ./db_tools
+    ports: # port mapping "external:internal". Internal ports are predefined.
+     - "50001:50000" #DB2 DDM port
+    container_name: "wa-db2-ddm"
+    privileged: true
+    hostname: wa-db2-ddm
+    networks:
+     - wa-net
+    volumes:
+     - wa-db2ddminst1_home:/home/db2inst1/
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
+
+  wa-ddm:
+    platform: linux/amd64
+    env_file:
+     - wa-ddm.env
+    environment:
+     - DB_HOSTNAME=wa-db2-ddm # The host name or IP address of database server (DO NOT TOUCH)
+     - DB_TYPE=DB2 # db2 | oracle
+     - DB_PORT=50000 # The port of the database server
+     - DB_USER=db2inst1
+     - DB_ADMIN_USER=db2inst1
+     - DB_PASSWORD=db2inst1
+     - DB_ADMIN_PASSWORD=db2inst1
+     - SERVERHOSTNAME=wa-server #  The host name on which the server is contacted by internal dynamic agents (DO NOT TOUCH)
+     - SERVERPORT=31116 #  The port on which the server is contacted by internal dynamic agents (DO NOT TOUCH)
+     - HOSTNAME=wa-ddm # The fully qualified host name on which the server installation is running
+     - PUBLIC_HOSTNAME=wa-ddm # The fully qualified host name or IP address on which the dynamic domain manager is contacted by the dynamic agent
+     - DB_NAME=DDMDB # The name of DDM Database
+     - WA_PASSWORD=wauser # The password of the user for which the component is installed
+     - PUBLIC_PORT=42114 # The public port to reach MDM in this container
+     - DWBNAME=WA_DWB_DDM # The bridge workstation name registered on the MDM
+     - AGT_NAME=WA_AGT_DDM # Dedicated dynamic agent name for this DDM
+     - DDM_MASTER=WA_FTA # Master workstation name on MDM
+     - DDM_DOMAIN=DYNAMICDM # The dynamic domain name
+     - DDM_MDM_HOSTNAME=wa-server # MDM hostname reached by DDM
+     - DDM_MDM_HTTPS_PORT=31116 # MDM HTTPS port reached by DDM
+     - SSL_PASSWORD= # Input the SSL Password for your custom certificates mounted on volume wa-certificates
+    image: hclcr.io/wa/hcl-workload-automation-ddm:10.2.8.00.amd64
+    privileged: true
+    depends_on:
+     - wa-server
+     - wa-db2-ddm
+    ports: # port mapping "external:internal". Internal ports are predefined.
+     - "41116:31116" #HTTPS MASTER
+     - "41115:31115" #HTTPS MASTER
+     - "42114:42114" #HTTPS DDM
+     - "41111:31111" #NETMAN
+    container_name: "wa-ddm"
+    hostname: wa-ddm
+    networks:
+     - wa-net
+    volumes:
+     - wa-ddm-data:/home/wauser
+     #- ./scripts:/scripts
+     - ./wa-certificates:/opt/wautils/certs # Mount the volume where custom SSL certificates need to be stored
 
 volumes:
   wa-db2inst1_home:
+  wa-db2ddminst1_home:
   wa-server-data:
   wa-console-data:
   wa-agent-data:
