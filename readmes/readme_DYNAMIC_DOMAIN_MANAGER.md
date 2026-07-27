@@ -220,7 +220,7 @@ Consider the following example:
 
 For more information, see: 
 
-[Running batch reports from the command line interface](https://help.hcltechsw.com/workloadautomation/v1027/distr/src_ref/awsrgbatchreps.html)
+[Running batch reports from the command line interface](https://help.hcltechsw.com/workloadautomation/v1028/distr/src_ref/awsrgbatchreps.html)
 
 
 ## Supported Docker versions
