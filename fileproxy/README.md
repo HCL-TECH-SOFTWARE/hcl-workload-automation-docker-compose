@@ -41,7 +41,7 @@ You can access the Workload Automation FileProxy container image from the Entitl
         
 	docker login -u <your_username> -p <your_entitled_key> hclcr.io
 
-Before you deploy HCL Workload Automation components on Linux on Z, see [Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1025/distr/src_pi/awspizLinuxDeployments.html)
+Before you deploy HCL Workload Automation components on Linux on Z, see [Deploying Docker compose on Linux on Z](https://help.hcltechsw.com/workloadautomation/v1028/distr/src_pi/awspizLinuxDeployments.html)
 
 
 
@@ -112,7 +112,7 @@ On amd64 and Linux on Z platforms.
 
 
 ## Additional Information
-For additional information about how to use the HCL Workload Automation, see the [online](https://help.hcl-software.com/workloadautomation/v1025/index.html) documentation. For technical issues, search for Workload Scheduler or Workload Automation on [StackOverflow](http://stackoverflow.com/search?q=workload+scheduler).
+For additional information about how to use the HCL Workload Automation, see the [online](https://help.hcl-software.com/workloadautomation/v1028/index.html) documentation. For technical issues, search for Workload Scheduler or Workload Automation on [StackOverflow](http://stackoverflow.com/search?q=workload+scheduler).
 
 
 ## License
