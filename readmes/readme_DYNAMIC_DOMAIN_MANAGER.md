@@ -14,7 +14,7 @@ Docker adoption ensures standardization of your workload scheduling environment 
 
 
 ## Supported tags
-- 10.2.8.00.20260727.amd64
+- 10.2.8.00.20260727
 
  
  ## Supported platforms
@@ -91,28 +91,28 @@ The HCL Workload Automation container has the following prerequisites:
 To start the container from the command-line, launch the following command by adding the name of the image that has been loaded:
 
 	 docker run \
-		-d -e PUBLIC_HOSTNAME=server_host_name \
-		-e PUBLIC_PORT=server_port \
-		-e LICENSE=ACCEPT \
-		-e WA_PASSWORD=wa_password \
-		-e DB_TYPE=db_type \
-		 -e LICENSE_SERVER_ID=licenseserverid \ 
-		-e LICENSE_SERVER_URL=licenseserverurl \
-		-e DB_HOSTNAME=db_hostname \
-		-e DB_PORT=db port \
-		-e DB_NAME=db_name \
-		-e DB_USER=db_user \
-		-e DB_PASSWORD=db_password \
-		-e DB_ADMIN_USER=db_admin_user \
-		-e DB_ADMIN_PASSWORD=db_admin_password \
-			-v workload-automation-server-data:/home/wauser \
-		hcl-workload-automation-server:<version_number>.\<release_date>
-		-e DDM_MASTER=WA_FTA
-		-e DDM_MDM_HOSTNAME=wa-server
-		-e DDM_MDM_HTTPS_PORT=31116
-		-e DDM_DOMAIN=DYNAMICDM
-		-e DWBNAME=WA_DWB_DDM
-		-e AGT_NAME=WA_AGT_DDM
+        -d -e PUBLIC_HOSTNAME=server_host_name \
+        -e PUBLIC_PORT=server_port \
+        -e LICENSE=ACCEPT \
+        -e WA_PASSWORD=wa_password \
+        -e DB_TYPE=db_type \
+        -e LICENSE_SERVER_ID=licenseserverid \ 
+        -e LICENSE_SERVER_URL=licenseserverurl \
+        -e DB_HOSTNAME=db_hostname \
+        -e DB_PORT=db_port \
+        -e DB_NAME=db_name \
+        -e DB_USER=db_user \
+        -e DB_PASSWORD=db_password \
+        -e DB_ADMIN_USER=db_admin_user \
+        -e DB_ADMIN_PASSWORD=db_admin_password \
+        -e DDM_MASTER=WA_FTA \
+        -e DDM_MDM_HOSTNAME=wa-server \
+        -e DDM_MDM_HTTPS_PORT=31116 \
+        -e DDM_DOMAIN=DYNAMICDM \
+        -e DWBNAME=WA_DWB_DDM \
+        -e AGT_NAME=WA_AGT_DDM \
+        -v workload-automation-ddm-data:/home/wauser \
+        hcl-workload-automation-ddm:<version_number>.\<release_date>
 
 
 > **Note:** The name of the image has to be the same as the one you loaded on your local workstation when you launched the docker load command.
@@ -155,11 +155,7 @@ For example, specify the variable and its value as follows: LICENSE=ACCEPT
  | LICENSE_SERVER_URL      | URL of the license server which processes license usage information                                                                                                                                                                                                           | no          | <licenseserverurl>   |
 | LICENSE_SERVER_ID       | ID of the license server which processes license usage information                                                                                                                                                                                                            | no          | <licenseserverid>    | 
 | SSL_PASSWORD              | The password to open the private key (tls.key)                                                                                                                                                                                                          | Only if you use custom certificates in PEM format         |                      |
-|DDM_MASTER              | The name of the CPU of the master domain manager                                                                                                                                                                                                        | yes       | WA_FTA                     |
-|DDM_MDM_HOSTNAME              | The hostname used by the dynamic domain manager to connect to the master domain manager                                                                                                                                                                                                          | yes         | wa-server                     |
-|DDM_MDM_HTTPS_PORT              | The port used by the dynamic domain manager to connect to the master domain manager                                                                                                                                                                                                       | yes        |   31116                   |
-|DDM_DOMAIN              | The domain used by the dynamic domain manager to register the components                                                                                                                                                                                                          | no        | DYNAMICDM                     |
-|DWBNAME              | The broker workstation used to identify the dynamic domain manager                                                                                                                                                                                                      | yes        | WA_DWB_DDM                     |
+
 - DB variables
 
 
@@ -220,7 +216,7 @@ Consider the following example:
 
 For more information, see: 
 
-[Running batch reports from the command line interface](https://help.hcltechsw.com/workloadautomation/v1028/distr/src_ref/awsrgbatchreps.html)
+[Running batch reports from the command line interface](https://help.hcltechsw.com/workloadautomation/v1027/distr/src_ref/awsrgbatchreps.html)
 
 
 ## Supported Docker versions
